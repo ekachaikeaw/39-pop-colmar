@@ -8,6 +8,11 @@ body {
   /* font-family: "Noto Sans Mandaic", sans-serif; */
 }
 
+.img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -60,9 +65,7 @@ body {
   padding: 16px;
   margin-bottom: 16px;
   background-color: lightcyan;
-}
-
-.info {
+  display: flex;
   flex-direction: column;
 }
 
@@ -72,7 +75,7 @@ h2 {
 }
 
 .read-more-link {
-    color: hsl(212,69%,70%);
+  color: hsl(212, 69%, 70%);
 }
 
 .info-orient {
@@ -167,5 +170,59 @@ h2 {
   .button {
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+
+  .info-orient,
+  .info-campus,
+  .info-guest {
+    display: none;
+  }
+
+  .info {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .info-desk-left {
+    padding: 32px 24px;
+    width: 60%;
+  }
+
+  .info-desk-left img {
+    width: 100%;
+  }
+
+  .info-desk-left h2 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    padding-left: 0px;
+  } 
+
+ /* .info-desk-span {
+    padding-top: 32px;
+ } */
+  .info-desk-right {
+    width: 40%;
+    padding-top: 16px;
+  }
+
+  .card {
+    padding: 16px;
+    display: flex;
+  }
+
+  .card img {
+    width: 35%;
+    height: auto;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 8px;
+    width: 65%;
+    height: auto;
   }
 }
