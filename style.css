@@ -9,9 +9,9 @@ body {
 }
 
 .img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .navbar {
   display: flex;
@@ -95,11 +95,59 @@ h2 {
   padding-top: 64px;
 }
 
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  padding-bottom: 32px;
+}
+
+.course h2 {
+  padding: 16px 0px 16px 0px;
+  align-self: center;
+}
+.course span {
+  padding: 16px 0px 24px 16px;
+  background-color: hsl(0, 0%, 40%);
+}
+
+.exhibits {
+  width: 100%;
+}
+
+.exhibits h2 {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.exhibits video {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+footer {
+    margin: 16px;
+}
+
+footer span {
+    text-align: center;
+}
+
 .destop-left {
   display: none;
 }
 
 .destop-right {
+  display: none;
+}
+
+.info-desk-left,
+.info-desk-right {
   display: none;
 }
 
@@ -197,9 +245,9 @@ h2 {
     padding-top: 32px;
     padding-bottom: 24px;
     padding-left: 0px;
-  } 
+  }
 
- /* .info-desk-span {
+  /* .info-desk-span {
     padding-top: 32px;
  } */
   .info-desk-right {
@@ -223,6 +271,6 @@ h2 {
     justify-content: center;
     line-height: 8px;
     width: 65%;
-    height: auto;
+    /* height: 100%; */
   }
 }
