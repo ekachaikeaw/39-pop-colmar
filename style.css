@@ -233,6 +233,8 @@ footer span {
   }
 
   .info-desk-left {
+    display: flex;
+    flex-direction: column;
     padding: 32px 24px;
     width: 60%;
   }
@@ -251,6 +253,8 @@ footer span {
     padding-top: 32px;
  } */
   .info-desk-right {
+    display: flex;
+    flex-direction: column;
     width: 40%;
     padding-top: 16px;
   }
@@ -263,13 +267,16 @@ footer span {
   .card img {
     width: 35%;
     height: auto;
+    max-width: 100%;
+    object-fit: cover;
   }
 
   .card-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 8px;
+    line-height: 1.6;
+    /* gap: 8px; */
     width: 65%;
     /* height: 100%; */
   }
@@ -305,6 +312,7 @@ footer span {
   .course-card img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
   }
 
 
