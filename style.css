@@ -27,28 +27,69 @@ body {
   height: 50px;
 }
 
+.learn {
+  display: flex;
+  flex-direction: column;
+}
+
 .learn-img img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .learn-subj {
-    padding: 32px 16px;
+  padding: 32px 16px;
 }
 
 .learn-subj h1 {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .learn-subj p {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .button {
-    width: 100%;
-    border: none;
-    background-color: hsl(0,0%,60%);
-    color: white;
-    padding: 15px 32px;
+  width: 100%;
+  border: none;
+  background-color: hsl(0, 0%, 60%);
+  color: white;
+  padding: 15px 32px;
+}
+
+.info {
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: lightcyan;
+}
+
+.info {
+  flex-direction: column;
+}
+
+.info span,
+h2 {
+  padding: 16px;
+}
+
+.read-more-link {
+    color: hsl(212,69%,70%);
+}
+
+.info-orient {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-campus {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.info-guest {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
 }
 
 .destop-left {
@@ -56,7 +97,7 @@ body {
 }
 
 .destop-right {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -80,11 +121,11 @@ body {
   }
 
   .destop-colmar-text {
-    color: black;;
+    color: black;
   }
 
   .destop-academy-text {
-    color: #999999;;
+    color: #999999;
   }
 
   .destop-logo img {
@@ -101,16 +142,30 @@ body {
     font-size: 16px;
   }
 
-  .learn-img,
-  .learn-subj {
-    display: none;
-  }
-
   .learn {
     padding: 32px 24px;
+    flex-direction: row;
+    background-color: lightcyan;
   }
 
-  
+  .learn-img {
+    width: 60%;
+    background-color: lightgray;
+    margin: 0px;
+    padding: 0px;
+  }
 
+  .learn-subj {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightpink;
+    padding-left: 24px;
+  }
 
+  .button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
