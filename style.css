@@ -278,26 +278,41 @@ footer span {
     display: none;
   }
 
-  .destop-course {
+  .desktop-course {
     display: flex;
     flex-direction: column;
+
   }
-  .desktop-col1,
-  .desktop-col2 {
+  .course {
+    padding: 0;
+  }
+  .desktop-course > h2 {
+    text-align: center;
+    text-align: center;
+    padding: 32px 0px 0px 0px;
+  }
+  .block-of-course {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
+    padding: 32px 72px;
+
+
   }
-  .course-card {
+
+  .course-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+  .course-card-text {
+    padding: 16px;
     display: flex;
     flex-direction: column;
-  }
-  .course-card img {
-    height: auto;
-    max-width: 100%;
-  }
-  .course-text {
-    line-height: 8px;
-    padding: 16px;
+    gap: 8px;
   }
 }
