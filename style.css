@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Noto Sans Mandaic", sans-serif; */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 25%;
+}
+
+.icon-box img {
+  height: 50px;
+}
+
+.learn-img img {
+    max-width: 100%;
+}
+
+.learn-subj {
+    padding: 32px 16px;
+}
+
+.learn-subj h1 {
+    margin-bottom: 32px;
+}
+
+.learn-subj p {
+    margin-bottom: 24px;
+}
+
+.button {
+    width: 100%;
+    border: none;
+    background-color: hsl(0,0%,60%);
+    color: white;
+    padding: 15px 32px;
+}
+
+.destop-left {
+  display: none;
+}
+
+.destop-right {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-box {
+    display: none;
+  }
+  .navbar {
+    padding: 0 24px;
+    background-color: lightgrey;
+  }
+
+  .destop-left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: lightblue;
+  }
+
+  .destop-text-box {
+    font-size: 32px;
+  }
+
+  .destop-colmar-text {
+    color: black;;
+  }
+
+  .destop-academy-text {
+    color: #999999;;
+  }
+
+  .destop-logo img {
+    height: 40px;
+  }
+
+  .destop-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 64px;
+    gap: 16px;
+    font-size: 16px;
+  }
+
+  .learn-img,
+  .learn-subj {
+    display: none;
+  }
+
+  .learn {
+    padding: 32px 24px;
+  }
+
+  
+
+
+}
